@@ -1,0 +1,11 @@
+package com.myproject.webservices;
+
+import com.myproject.webservices.Properties;
+
+rule "Test rule"
+salience 1000
+	when
+        $prop : Properties(isSet() == true)
+    then
+        $prop.setResult("Properties is set");
+end
