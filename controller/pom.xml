@@ -15,19 +15,6 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
-	<dependencyManagement>
-		<dependencies>
-			<!-- Drools dependencies -->
-			<dependency>
-				<groupId>org.drools</groupId>
-				<artifactId>drools-bom</artifactId>
-				<version>6.1.0.Final</version>
-				<scope>import</scope>
-				<type>pom</type>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
-
 	<dependencies>
 		<dependency>
 			<groupId>com.myproject</groupId>
@@ -47,18 +34,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-undertow</artifactId>
-		</dependency>
-		
-		<!-- Dependencies for Drools -->
-		<dependency>
-			<groupId>org.kie</groupId>
-			<artifactId>kie-api</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.drools</groupId>
-			<artifactId>drools-compiler</artifactId>
-		</dependency>
-		
+		</dependency>		
 		
 		<dependency>
 			<groupId>org.postgresql</groupId>
